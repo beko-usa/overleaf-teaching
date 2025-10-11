@@ -1,0 +1,84 @@
+\documentclass[a4paper,14pt]{article}                %用紙サイズ，本文フォント大きさ
+\usepackage{setspace}                                %余白をとるためのパッケージ
+\usepackage{xeCJK, xcolor, tcolorbox, amsmath, amssymb, geometry}
+\geometry{top=18mm,bottom=20mm,left=20mm,right=20mm} %ページマージン
+
+
+% ===== 色定義（RGB） =====
+\definecolor{myred}{RGB}{230,0,18}  %ミャクミャクの赤
+\definecolor{myblue}{RGB}{0,104,180}  %ミャクミャクの青
+
+% ===== フォント設定 =====
+% 日本語フォント設定（丸ゴ風）
+\setCJKmainfont{Noto Sans CJK JP} %日本語の本文
+\setCJKsansfont{Noto Sans CJK JP} %sans-serifに対応する日本語フォント
+\setCJKmonofont{Noto Sans CJK JP} %等幅フォント(コード等)
+
+%\setCJKmainfont{IPAMincho}  % 標準（明朝）
+
+\setCJKfamilyfont{mincho}{IPAMincho} %フォントに名前を付ける
+
+
+\begin{document}
+
+% ===== タイトルブロック =====
+\begin{tcolorbox}[
+  colback=myblue!5,     % 背景：薄い青
+  colframe=myblue,      % 枠：本青
+  boxrule=1pt,
+  arc=3mm,
+  width=\textwidth
+]
+
+\begin{center}                                               %センター揃え
+{\Large  \textcolor{myblue}{数学テスト No.1}}\\[0.4em]         %テストのタイトル，ナンバー
+{ \CJKfamily{mincho} 単項式の乗法と除法}\\[0.8em]               %テストの内容 ここだけ明朝
+\textcolor{myred}{日付：\underline{\hspace{3cm}} \hfill 点数：\underline{\hspace{2cm}}}
+\end{center}
+\end{tcolorbox}
+
+\vspace{1em}  %下方にスペース
+
+% ===== 問題部分 =====
+
+% iワーク中2 p16-18より20題抜粋
+
+\begin{enumerate}                                        %自動でナンバーがつく
+ \begin{spacing}{5}                                      %問題部分の改行幅
+  \item $(-5y)^2 \times 2 = \textcolor{myred} {50y^2}$
+  \item $xy^2 \div \dfrac{1}{2}xy = \textcolor{myred} {2y}$
+  \item $- \displaystyle \frac{5}{18}xy^2 \div \frac{10}{27}xy = \textcolor{myred} {- \frac{3}{4}y}$
+  \item $-4ab^4 \times 7a \div (-14b) = \textcolor{myred} {2a^2b}$
+  \item $(-24x^2y) \div 6x \div (-2y) =\textcolor{myred} {2x}$
+  \item $(-a^4) \div (-a) \div \displaystyle \frac{a^2}{2}= \textcolor{myred} {2a}$
+  \item $a^2b \div \displaystyle \frac{1}{3}ab = \textcolor{myred} {3a}$
+  \item $-8x^2 \div 2x = \textcolor{myred} {-4x}$
+  \item $\displaystyle \frac{7}{12}a^4 \div \frac{21}{4}a = \textcolor{myred} {\frac{a^3}{9}}$
+  \item $(3x)^2 = \textcolor{myred} {9x^2}$
+  \item $\displaystyle \frac{1}{3}x \times \frac{2}{5}x = \textcolor{myred} {\frac{2}{25}x^2}$
+  \item $3a \times (-2b) = \textcolor{myred} {-6ab}$
+  \item $\displaystyle x^2y \times y \div \frac{1}{3}xy^2 = \textcolor{myred} {3x}$
+  \item $\displaystyle -12ab \div 3a \times \frac{1}{4}b = \textcolor{myred} {-b^2}$
+  \item $a^4 \times a = \textcolor{myred} {a^5}$
+  \item $(-8x) \times (-2x) = \textcolor{myred} {16x^2}$
+  \item $\displaystyle -\frac{2}{3}a^2b \div \frac{4}{9}a = \textcolor{myred} {-\frac{3}{2}ab}$
+  \item $-4xy \div (-2x) = \textcolor{myred} {2y}$
+  \item $\displaystyle \frac{1}{2}x \times (2x)^2 = \textcolor{myred} {2x^3}$
+  \item $(-x^2) \times 4x = \textcolor{myred} {-4x^3}$
+ \end{spacing} 
+\end{enumerate}
+
+\vspace{2em}
+
+% ===== 解答欄デザイン（赤枠） =====
+%\begin{tcolorbox}[
+%  colback=white,
+%  colframe=myred,
+%  boxrule=0.8pt,
+%  arc=2mm,
+%  width=\textwidth
+%]
+%\vspace{6cm} % 解答スペースの高さ
+%\end{tcolorbox}
+
+\end{document}
