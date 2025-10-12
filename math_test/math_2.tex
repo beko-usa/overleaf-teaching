@@ -1,0 +1,67 @@
+%数学テストテンプレート  タイトルと問題を書き換えて使用する
+\documentclass[a4paper,14pt]{article}  % これは絶対先頭に必要なやつ 用紙サイズ，本文フォント大きさ
+\input{template/preamble} %プリアンブルは別ファイルから読み込み
+
+\begin{document}
+
+% ===== タイトルブロック =====
+\begin{tcolorbox}[
+  colback=myblue!5,     % 背景：薄い青
+  colframe=myblue,      % 枠：本青
+  boxrule=1pt,
+  arc=3mm,
+  width=\textwidth
+]
+
+\begin{center}                                               %センター揃え
+{\Large  \textcolor{myblue}{数学テスト No.2}}\\[0.4em]         %テストのタイトル，ナンバー
+{ \CJKfamily{mincho} 単項式の乗法と除法}\\[0.8em]               %テストの内容 ここだけ明朝
+\textcolor{myred}{日付：\underline{\hspace{3cm}} \hfill 点数：\underline{\hspace{2cm}}}
+\end{center}
+\end{tcolorbox}
+
+\vspace{1em}  %下方にスペース
+
+% ===== 問題部分 =====
+
+% iワーク中2 p　　　　　　　　より20題抜粋
+
+\begin{enumerate}                                        %自動でナンバーがつく
+ \begin{spacing}{5}                                      %問題部分の改行幅
+  \item $$
+  \item $$
+  \item $$
+  \item $$
+  \item $$
+  \item $$
+  \item $$    てすと２をつくり中だよ　問題を入力するよ
+  \item $$
+  \item $$
+  \item $$
+  \item $$
+  \item $$
+  \item $$
+  \item $$
+  \item $$
+  \item $$
+  \item $$
+  \item $$
+  \item $$
+  \item $$  
+ \end{spacing} 
+\end{enumerate}
+
+\vspace{2em}
+
+% ===== 解答欄デザイン（赤枠） =====
+%\begin{tcolorbox}[
+%  colback=white,
+%  colframe=myred,
+%  boxrule=0.8pt,
+%  arc=2mm,
+%  width=\textwidth
+%]
+%\vspace{6cm} % 解答スペースの高さ
+%\end{tcolorbox}
+
+\end{document}

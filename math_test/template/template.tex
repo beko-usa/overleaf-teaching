@@ -1,29 +1,7 @@
 %数学テストテンプレート  タイトルと問題を書き換えて使用する
 
-\documentclass[a4paper,14pt]{article}                %用紙サイズ，本文フォント大きさ
-\usepackage{setspace}                                %余白をとるためのパッケージ
-\usepackage{xeCJK, xcolor, tcolorbox, amsmath, amssymb, geometry}
-\geometry{top=18mm,bottom=20mm,left=20mm,right=20mm} %ページマージン
-
-
-% ===== 色定義（RGB） =====
-\definecolor{myred}{RGB}{230,0,18}  %ミャクミャクの赤
-\definecolor{myblue}{RGB}{0,104,180}  %ミャクミャクの青
-
-% ===== フォント設定 =====
-% 日本語フォント設定（丸ゴ風）
-\setCJKmainfont{Noto Sans CJK JP} %日本語の本文
-\setCJKsansfont{Noto Sans CJK JP} %sans-serifに対応する日本語フォント
-\setCJKmonofont{Noto Sans CJK JP} %等幅フォント(コード等)
-%\setCJKmainfont{IPAMincho}  % 標準（明朝）
-
-%英文フォント設定
-\setmainfont{Noto Sans}
-
-\sffamily % ← 全体をサンセリフ体（丸ゴ風）に
-
-\setCJKfamilyfont{mincho}{IPAMincho} %フォントにファミリ名を付ける
-
+\documentclass[a4paper,14pt]{article}  % これは絶対先頭に必要なやつ 用紙サイズ，本文フォント大きさ
+\input{template/preamble}  %プリアンブルは別ファイルから読み込み(共通設定)
 
 \begin{document}
 
