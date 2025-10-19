@@ -1,0 +1,70 @@
+\documentclass[a4paper,14pt]{article}  % これは絶対先頭に必要なやつ 用紙サイズ，本文フォント大きさ
+\input{template/preamble}  %プリアンブルは別ファイルから読み込み(共通設定)
+
+\begin{document}
+
+% ===== タイトルブロック =====
+\begin{tcolorbox}[
+  colback=myblue!5,     % 背景：薄い青
+  colframe=myblue,      % 枠：本青
+  boxrule=1pt,
+  arc=3mm,
+  width=\textwidth
+]
+
+
+\begin{center}                                               %センター揃え
+{\Large  \textcolor{myblue}{数学テスト No.3}}\\[0.4em]         %テストのタイトル，ナンバー
+{ \CJKfamily{mincho} 文字式の利用}\\[0.8em]               %テストの内容 ここだけ明朝
+\textcolor{myred}{日付：\underline{\hspace{3cm}} \hfill 点数：\underline{\hspace{2cm}}}
+\end{center}
+\end{tcolorbox}
+
+\vspace{1em}  %下方にスペース
+
+% ===== 問題部分 =====
+
+% iワーク中2 p22～24より20題抜粋
+
+\begin{enumerate}                                        %自動でナンバーがつく
+ \begin{spacing}{3.5}                                      %問題部分の改行幅
+  \item 次の等式を[ ]の中の文字について解きなさい．
+    \begin{enumerate}  
+      \item $m + n = 3 \quad [m]$
+      \item $\dfrac{1}{2}xy = 10 \quad [y]$
+      \item $V = \dfrac{1}{3}Sh \quad [h]$
+      \item $3x + 5y - 8 = 0 \quad [x]$
+      \item $3ab = 6 \quad [b]$
+      \item $c = 4(a+b) \quad [a]$
+      \item $\dfrac{2p+q}{5}=r \quad [q]$      
+    \end{enumerate}
+  \end{spacing}  
+  \vspace{1em}    
+  \begin{spacing}{1.8} 
+  \item ３つの続いた整数の和は３の倍数になる．このわけを，文字を使って説明する．(\quad)は式を，【\quad】には日本語を入れなさい．
+    \begin{tcolorbox}[colback=white, colframe=black, boxrule=0.4pt,                   arc=2mm, left=2mm, right=2mm, top=1mm, bottom=1mm]
+    ３つの続いた整数のうち，もっとも小さい整数をnとすると，３つの続いた整数は
+    $n,(\rule{2cm}{0.1mm}),(\rule{2cm}{0.1mm})$ と表される．それらの和は，
+      \begin{align*}
+          n + (\rule{2cm}{0.1mm} ) + (\rule{2cm}{0.1mm}) &= (\rule{2cm}{0.1mm})\\
+          &=3(\rule{2cm}{0.1mm})
+      \end{align*}
+    $n+1$は【\rule{2cm}{0.1mm}】だから，$3(\rule{2cm}{0.1mm})$は３の倍数である．
+    したがって，３つの続いた整数の和は３の倍数になる．
+    \end{tcolorbox}
+ 
+  \item １，３，５のような差が２である３つの整数の和は3の倍数になる．このわけを，文字を使って説明しなさい．
+    \begin{tcolorbox}[colback=white, colframe=black, boxrule=0.4pt,                   arc=2mm, left=2mm, right=2mm, top=1mm, bottom=1mm]
+      \vspace{9cm}
+    \end{tcolorbox}
+  \vspace{4em}
+  \item 偶数と奇数の和は奇数になる．このわけを，文字を使って説明しなさい．
+    \begin{tcolorbox}[colback=white, colframe=black, boxrule=0.4pt,                   arc=2mm, left=2mm, right=2mm, top=1mm, bottom=1mm]
+      \vspace{9cm}
+    \end{tcolorbox}
+ \end{spacing} 
+\end{enumerate}
+
+\vspace{2em}
+
+\end{document}
