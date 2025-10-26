@@ -1,0 +1,69 @@
+%数学テストテンプレート  タイトルと問題を書き換えて使用する
+
+\documentclass[a4paper,14pt]{article}  % これは絶対先頭に必要なやつ 用紙サイズ，本文フォント大きさ
+\input{template/preamble}  %プリアンブルは別ファイルから読み込み(共通設定)
+
+\begin{document}
+
+% ===== タイトルブロック =====
+\begin{tcolorbox}[
+  colback=myblue!5,     % 背景：薄い青
+  colframe=myblue,      % 枠：本青
+  boxrule=1pt,
+  arc=3mm,
+  width=\textwidth
+]
+
+\begin{center}                                               %センター揃え
+{\Large  \textcolor{myblue}{数学テスト No.4}}\\[0.4em]         %テストのタイトル，ナンバー
+{ \CJKfamily{mincho} 式の計算}\\[0.8em]               %テストの内容 ここだけ明朝
+\textcolor{myred}{日付：\underline{\hspace{3cm}} \hfill 点数：\underline{\hspace{2cm}}}
+\end{center}
+\end{tcolorbox}
+
+\vspace{1em}  %下方にスペース
+
+% ===== 問題部分 =====
+
+% iワーク中2 p32，33，40，41より20題抜粋
+
+次の計算をしなさい．
+\begin{enumerate}                                        %自動でナンバーがつく
+ \begin{spacing}{5.2}                                      %問題部分の改行幅
+  \item $(5a^2+7ab+1)-(a^2-3ab)$
+  \item $\dfrac{1}{3}a-2b+7b+\dfrac{1}{6}a$
+  \item $-8(-\dfrac{1}{2}a+\dfrac{3}{4}b)$
+  \item $(6x-12y+6)\div6$
+  \item $(2x^2-7xy)-(x^2-8xy)$
+  \item $(10x-15y+5)\times\dfrac{2}{5}$
+  \item $\dfrac{3}{2}(8x-2y)$
+  \item $(4ab+6a)\div(-\dfrac{2}{5})$
+  \item $-2(5m+n-7)$
+  \item $\dfrac{2x-5}{6}+\dfrac{3x-y}{4}$
+  \item $4x+y-\dfrac{x+2y}{3}$
+  \item $(-8xy)\times(-5y^2)$
+  \item $5(2a^2-3a)-4(3a^2+7a)$
+  \item $(-9ab)\div\dfrac{3}{5}a^3b$
+  \item $a^2\times2b\div ab$
+  \item $6x\div2xy\times3xy^2$
+  \item $(-3x)^2 \div(-2x)\times6x$
+  \item $\dfrac{5a+3b}{8}-\dfrac{2a+7b}{4}$
+  \item $\dfrac{1}{2}(4x+6y)+\dfrac{2}{3}(6x-9y)$  
+  \item $(-3a)^3\times \dfrac{2}{3}a$
+ \end{spacing} 
+\end{enumerate}
+
+\vspace{2em}
+
+% ===== 解答欄デザイン（赤枠） =====
+%\begin{tcolorbox}[
+%  colback=white,
+%  colframe=myred,
+%  boxrule=0.8pt,
+%  arc=2mm,
+%  width=\textwidth
+%]
+%\vspace{6cm} % 解答スペースの高さ
+%\end{tcolorbox}
+
+\end{document}
